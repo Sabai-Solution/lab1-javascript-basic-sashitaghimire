@@ -1,13 +1,13 @@
 function validateEmptyValues(){
-	var txtEmail=document.getElementsByTagName("txtEmail");
-	var txtUn=document.getElementsByTagName("txtEmail");
-	var txtPassword=document.getElementsByTagName("txtEmail");
+	var txtEmail=document.getElementById("txtEmail").value;
+	var txtUser=document.getElementById("txtUser").value;
+	var txtPassword=document.getElementById("txtPassword").value;
 
 	var appendError="";
 	if(txtEmail==""){
 		appendError="email";
 	}
-	if(txtUn==""){
+	if(txtUser==""){
 		if(appendError!=""){
 			appendError=appendError+"and";
 		}
